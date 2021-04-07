@@ -1,0 +1,64 @@
+- Recruiter 
+    - senior
+    - jr 
+    - staff developer
+
+- Company (HR)
+    - phone screen 
+    - ASK WHO YOU ARE INTERVEWING WITH in the next step 
+    - how big is your engineering team? (small = lots of responsibility off the bat, large = you have more time to build up skills)
+    - what's the company culture like? do anything after hours? family oriented? work independenly or team based? mentorship available? team work all the way through or on your own for a large portion?
+    - who are your competitors?
+    - have your projects memorized and have simple questions ready to go. No fumbling 
+    - what are you looking for in this role?
+    - what have you been doing the past 6 months?
+    - this should be your sales pitch that you know off the top of your head
+
+PRESCREEN Questions: assessing basic qualifications for the next step
+(big companies might have basic algorithm questions, smaller companies might just be generalized knowledge)
+    - difference b/w const, let and var 
+        - V's answer: const allows you to set constants, variables that aren't going to chagne (advanced: cannot change the pointer on the const. Can set it to an object and change the object but you can't change the pointer to a diff object)
+            - let: block scope variable. Releases the variable after the block has executed. scoped to the function of what it's within, can be global though 
+            - CONST and LET can't access var before it was defined
+            - var: hoisting???- can be used before it is defined
+    - prototypical inheritance 
+
+    - what does this mean in JS and what functions can you use to change the context?
+        - call, bind and apply 
+    
+    - data structure of the DOM? a tree 
+
+    - in pure js, instead of attaching event listeners to 20 buttons. Attach EL to the parent and use the window object to access the specific thing you are looking for 
+
+    - is JS a single or multi threaded language? single threaded which uses event loops 
+    - put event loops in your own words: pizza shop example: when someone comes to the counter you take their 20 min order, you have them move to another area to wait. If someone just gets a drink you just take care of them right there. If someone else comes with another 20 min order they get put off as well. 
+    Since JS is single threaded, they can only execute one thing at a time it moves things that take longer aside and come back to it when its ready. 
+
+    - what is a stack and a que in JS?
+        - data structure is an array 
+        - stack: last in first out like a stack of plates
+            - should only have two opperations, push and pop
+        - que: first in first out like a like of people waiting 
+
+
+
+
+
+- Onsite 
+
+Types of people you could interview with:
+*do your research, find them on linked in and see where they went to school, were they come from and what jobs they've had before so that you can know your audience:
+    - are they self taught? CS degree? are they from an untraditional background?
+
+CS people - math heavy, algorithm focused
+Hardware - dev ops and Hardware, networks, distributive systems
+Builders - think that building this is the purpose (Mark Zuck)
+
+There are so many different angles to come from 
+
+
+Start-ups: won't really have a process you can predict 
+    - want you to come in and start coding right away 
+
+Midsize/Big companies: have a process in place, usually documented from people that have gone before (google questions!)
+    - easier to prepare b/c there's so much information out there 
