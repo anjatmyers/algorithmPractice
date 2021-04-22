@@ -62,7 +62,7 @@ const isAnagram = (str1, str2) => {
         }
     }
     // creating str2Obj
-    for(x in str2Arr){
+    for(let x in str2Arr){
         
         if(str2Arr[x] in str2Obj){
             str2Obj[str2Arr[x]] += 1
@@ -73,7 +73,7 @@ const isAnagram = (str1, str2) => {
     }
     
     
-    for(key in str1Obj){
+    for(let key in str1Obj){
         if(str1Obj[key] !== str2Obj[key]){
             return false;
         }

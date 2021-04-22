@@ -5,17 +5,18 @@ let str1 = "happy";
 let str3 = "Dog"
 let str4 = "MonKeY"
 
+const reverseString = (str) => {
+    let str2 = '';
 
-// const reverseStr = (str) => {
-//     let str2 = "";
+    for(i=str.length - 1; i>=0; i--){
+        str2 = str2 + str[i]
+    }
+    return str2
+}
 
-//     for(i = str.length - 1; i >= 0; i--){
-//         str2 = str2 + str[i]
-//     }
-//     return str2;
-// }
 
-// console.log(reverseStr(str4));
+console.log(reverseString(str1));
+
 
 
 // NOTES
@@ -69,62 +70,63 @@ let str4 = "MonKeY"
 
 // Return true if a and b are alike. Otherwise, return false.
 
-let s = "booolk"
-console.log(s)
 
-let a = s.slice(0, s.length/2).toLowerCase();
-let b = s.slice(s.length/2, s.length).toLowerCase();
-console.log(a, b)
-let aObj = {
-    a: 0, 
-    e: 0,
-    i: 0,
-    o: 0,
-    u: 0
-}
-let bObj = {
-    a: 0, 
-    e: 0,
-    i: 0,
-    o: 0,
-    u: 0
-}
+// let s = "boUAoUUk"
+// console.log(s)
 
-let aVowelCount = 0;
-let bVowelCount = 0;
+// let a = s.slice(0, s.length/2).toLowerCase();
+// let b = s.slice(s.length/2, s.length).toLowerCase();
+// console.log(a, b)
+// let aObj = {
+//     a: 0, 
+//     e: 0,
+//     i: 0,
+//     o: 0,
+//     u: 0
+// }
+// let bObj = {
+//     a: 0, 
+//     e: 0,
+//     i: 0,
+//     o: 0,
+//     u: 0
+// }
 
-const isMatch = (a, b) => {
+// let aVowelCount = 0;
+// let bVowelCount = 0;
 
-    for (i=0; i< a.length; i++){
-        if (a[i] in aObj){
-            aObj[a[i]] += 1;
-        }
-        if(b[i] in bObj){
-            bObj[b[i]] += 1;
-        }
-    }
+// const isMatch = (a, b) => {
+
+//     for (i=0; i< a.length; i++){
+//         if (a[i] in aObj){
+//             aObj[a[i]] += 1;
+//         }
+//         if(b[i] in bObj){
+//             bObj[b[i]] += 1;
+//         }
+//     }
     
-    // console.log(aObj);
-    // console.log(bObj);
+//     // console.log(aObj);
+//     // console.log(bObj);
     
-    for (x in aObj){
-        aVowelCount += aObj[x]
-    }
-    for (x in bObj){
-        bVowelCount += bObj[x]
-    }
-    // console.log(aVowelCount);
-    // console.log(bVowelCount);
+//     for (key in aObj){
+//         aVowelCount += aObj[key]
+//     }
+//     for (key in bObj){
+//         bVowelCount += bObj[key]
+//     }
+//     // console.log(aVowelCount);
+//     // console.log(bVowelCount);
 
-    if(aVowelCount == bVowelCount){
-        return true;
-    }
-    else{
-        return false;
-    }
+//     if(aVowelCount == bVowelCount){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
     
 
-}
+// }
 
 
-console.log(isMatch(a, b));
+// console.log(isMatch(a, b));

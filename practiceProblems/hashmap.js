@@ -27,7 +27,7 @@
 
 
 // METHODS
-const myMap = new Map([[{}, 'a'], [{}, 'b']]);
+const myMap = new Map([[{'a': 0}, 'a'], [{}, 'b']]);
 
 // set: can use an object, string or number
 myMap.set({}, 'c');
@@ -69,27 +69,27 @@ myMap2.set('a', myMap2.get('a') + 1);
 myMap2.set('a', myMap2.get('a') + 1);
 myMap2.set('a', myMap2.get('a') + count);
 
-console.log(myMap2);
-console.log(myMap2.get('a'))
+// console.log(myMap2);
+// console.log(myMap2.get('a'))
 
-for(let key of myMap2.keys()){
-    console.log(`key is ${key}`)
-}
+// for(let key of myMap2.keys()){
+//     console.log(`key is ${key}`)
+// }
 
-for(let value of myMap2.values()){
-    console.log(`Value is ${value}`)
-}
+// for(let value of myMap2.values()){
+//     console.log(`Value is ${value}`)
+// }
 
-// FOR LOOP ALWAYS GIVES KEY THEN VALUE******
-for(let [key, value] of myMap2){
-    console.log(`Key is ${key} and value is ${value}`);
-}
+// // FOR LOOP ALWAYS GIVES KEY THEN VALUE******
+// for(let [key, value] of myMap2){
+//     console.log(`Key is ${key} and value is ${value}`);
+// }
 console.log("<<<<<<<<<<<<<<<")
 
 // with the For Each loop it understands you are trying to do something with the values and treats the keys like indexes, where with the for let loop above they give the values and keys as asked for 
 
-myMap.forEach((key) => console.log(`${key}`))
-myMap.forEach((value) => console.log(`${value}`))
+// myMap.forEach((key) => console.log(`${key}`))
+// myMap.forEach((value) => console.log(`${value}`))
 // to get the key and the value put the value first 
 // FOREACH ALWAYS GIVES VALUE THEN KEY******
 myMap.forEach((value, key) => console.log(`value: ${value}, key is ${key}`))
