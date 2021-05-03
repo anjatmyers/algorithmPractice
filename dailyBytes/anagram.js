@@ -6,7 +6,7 @@
 // s = "program", t = "function", return false
 
 // solution 1 sort strings and check if equal
-// ..................
+// .....................
 // const isAnagram = (str1, str2) => {
     
 //     let str1Obj = {};
